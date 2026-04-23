@@ -22,4 +22,3 @@ public class DynamicStringList implements StringList {
         }
     return array[index];
   }
-}
