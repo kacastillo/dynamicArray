@@ -57,10 +57,32 @@ public class testing {
     public void testRemove() {}
 
     @Test // Test method for int size()
-     void testSize() {}
+     void testSize() {
+        DynamicStringList list = new DynamicStringList();
+            // should be 0
+            assertEquals(0, list.size());
+
+            // Test if have 3 thing -> size 3
+            list.add("meo");
+            list.add("mew");
+            list.add("meow");
+            assertEquals(3, list.size());
+     }
 
     @Test // Test method for int capacity()
-    void testCapacity() {}
+    void testCapacity() {
+        DynamicStringList list = new DynamicStringList();
+        // list make at 10 already -> test correct
+        assertEquals(10, list.capacity());
+
+        // make a for loop? to test if size bigger
+        for (int i=0; i < 10; i++) {
+            list.add("Meow" + i);
+        }
+        list.add("I'm fat and I need bigger space");
+        // should be 20 because we add() make array * 2 when add value more than size
+        assertEquals(20, list.capacity());
+    }
     }
 
     
