@@ -54,7 +54,20 @@ public class testing {
     }
 
     @Test // Test method for String remove(int index)
-    public void testRemove() {}
+    public void testRemove() {
+        DynamicStringList list = new DynamicStringList();
+        list.add("kelley");
+        list.add("kate");
+        list.add("partners");
+
+        // Remove first element
+        String removedFirst = list.remove(0);
+        assertEquals("kelley", removedFirst);
+        assertEquals(2, list.size());
+        assertEquals("kate", list.get(0));
+ 
+    }
+
 
     @Test // Test method for int size()
      void testSize() {
