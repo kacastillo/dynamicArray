@@ -35,6 +35,4 @@ public class DynamicStringList implements StringList {
     }
      array[index] = value;
   }
-
-  
 }
