@@ -70,7 +70,7 @@ public class testing {
 
 
     @Test // Test method for int size()
-     void testSize() {
+     public void testSize() {
         DynamicStringList list = new DynamicStringList();
             // should be 0
             assertEquals(0, list.size());
@@ -83,7 +83,7 @@ public class testing {
      }
 
     @Test // Test method for int capacity()
-    void testCapacity() {
+    public void testCapacity() {
         DynamicStringList list = new DynamicStringList();
         // list make at 10 already -> test correct
         assertEquals(10, list.capacity());
